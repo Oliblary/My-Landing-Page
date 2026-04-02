@@ -3,82 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Write Better, Faster with AI</title>
+<title>Write Better & Faster with QuillBot AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f9fc;
-  color: #333;
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#f5f7fb;
+    color:#333;
 }
 
 header {
-  background: #0b57d0;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background: linear-gradient(135deg,#4A90E2,#6C5CE7);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
 }
 
-.hero {
-  padding: 60px 20px;
-  text-align: center;
+header h1 {
+    font-size:2.8em;
 }
 
-.hero h1 {
-  font-size: 36px;
+header p {
+    font-size:1.2em;
+    margin-bottom:30px;
 }
 
-.hero p {
-  font-size: 18px;
-  margin: 20px 0;
+.cta {
+    background:#ff6a3d;
+    color:#fff;
+    padding:15px 35px;
+    font-size:1.2em;
+    text-decoration:none;
+    border-radius:8px;
+    display:inline-block;
+    transition:0.3s;
 }
 
-.cta-btn {
-  background: #ff5722;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
+.cta:hover {
+    background:#e85b2f;
+}
+
+.countdown {
+    margin-top:20px;
+    font-size:1.1em;
+    font-weight:600;
+}
+
+section {
+    max-width:1100px;
+    margin:60px auto;
+    padding:0 20px;
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
 }
 
 .feature {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex:1 1 300px;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    text-align:center;
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.6s;
+}
+
+.feature.show {
+    opacity:1;
+    transform:translateY(0);
 }
 
 .testimonials {
-  padding: 40px;
-  background: #fff;
+    margin-top:50px;
 }
 
 .testimonial {
-  margin-bottom: 20px;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
-.sticky {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #0b57d0;
-  text-align: center;
-  padding: 10px;
+.email-box {
+    background:#fff;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
-.timer {
-  font-size: 20px;
-  color: red;
+.email-box input {
+    padding:15px;
+    width:250px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.email-box button {
+    padding:15px 25px;
+    background:#4A90E2;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.sticky-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#ff6a3d;
+    color:#fff;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:#fff;
 }
 </style>
 </head>
@@ -86,53 +142,76 @@ header {
 <body>
 
 <header>
-  <h2>Boost Your Writing Instantly 🚀</h2>
+    <h1>Write 10X Faster with QuillBot AI</h1>
+    <p>Students, writers & professionals are using this AI tool to rewrite, paraphrase & improve writing instantly.</p>
+    
+    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta">Try QuillBot Now</a>
+
+    <div class="countdown" id="timer">Offer expires in: 10:00</div>
 </header>
 
-<section class="hero">
-  <h1>Write Smarter, Faster & Error-Free in Seconds</h1>
-  <p>Join millions using AI to rewrite, paraphrase, and perfect their writing effortlessly.</p>
-  <p class="timer" id="countdown">Offer expires in: 10:00</p>
-  <a href="#"><button class="cta-btn">Start Writing Better Now</button></a>
-</section>
-
-<section class="features">
-  <div class="feature">
-    <h3>⚡ Instant Paraphrasing</h3>
-    <p>Rewrite any text in seconds with AI precision.</p>
-  </div>
-  <div class="feature">
-    <h3>🧠 Smart AI Suggestions</h3>
-    <p>Improve clarity, tone, and readability instantly.</p>
-  </div>
-  <div class="feature">
-    <h3>📄 Grammar Perfection</h3>
-    <p>Fix grammar mistakes automatically.</p>
-  </div>
+<section>
+    <div class="features">
+        <div class="feature">🔥 AI Paraphrasing Tool<br><br>Rewrite content instantly without plagiarism.</div>
+        <div class="feature">⚡ Boost Productivity<br><br>Write essays, emails & content faster.</div>
+        <div class="feature">✅ Grammar Checker<br><br>Fix mistakes automatically in seconds.</div>
+    </div>
 </section>
 
 <section class="testimonials">
-  <h2>What Users Are Saying</h2>
-  <div class="testimonial">“This tool changed how I write essays!” – Sarah, USA</div>
-  <div class="testimonial">“Saved me hours of editing work.” – Daniel, UK</div>
-  <div class="testimonial">“Best AI writing tool I’ve used.” – Amina, Nigeria</div>
+    <h2>What Users Are Saying</h2>
+
+    <div class="testimonial">"This tool saved me hours of writing!" – Student</div>
+    <div class="testimonial">"Perfect for content creation and rewriting." – Freelancer</div>
+    <div class="testimonial">"My productivity doubled using this AI." – Blogger</div>
 </section>
 
-<div class="sticky">
-  <a href="#"><button class="cta-btn">Try It Now →</button></a>
-</div>
+<section>
+    <div class="email-box">
+        <h2>Get FREE Writing Hacks & Tools</h2>
+        <form action="YOUR_EMAIL_FORM_LINK" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Get Access</button>
+        </form>
+        <p>No spam. 100% privacy.</p>
+    </div>
+</section>
+
+<section style="text-align:center;">
+    <h2>Start Writing Smarter Today</h2>
+    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta">Get Started Now</a>
+</section>
+
+<a href="YOUR_AFFILIATE_LINK_HERE" class="sticky-btn">🚀 Start Now</a>
+
+<footer>
+    <p>© 2026 QuillBot Affiliate Page</p>
+</footer>
 
 <script>
+// Countdown Timer
 let time = 600;
-const countdown = document.getElementById('countdown');
+let timer = document.getElementById("timer");
 
 setInterval(() => {
-  let minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-  countdown.innerHTML = `Offer expires in: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-  time--;
-  if (time < 0) time = 0;
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    timer.innerHTML = "Offer expires in: " + minutes + ":" + seconds;
+    time--;
 }, 1000);
+
+// Scroll Animation
+let features = document.querySelectorAll('.feature');
+
+window.addEventListener('scroll', () => {
+    features.forEach(f => {
+        let position = f.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100){
+            f.classList.add('show');
+        }
+    });
+});
 </script>
 
 </body>
