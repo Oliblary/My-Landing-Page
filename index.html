@@ -1,4 +1,210 @@
-<a href="YOUR_AFFILIATE_LINK_HERE" class="cta">Boost Your Writing Today</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write Smarter & Faster with AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* GLOBAL */
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#f5f7fb;
+    color:#333;
+}
+h1,h2 { margin:0.5em 0; }
+a { text-decoration:none; }
 
-<!-- Sticky -->
-<a href="YOUR_AFFILIATE_LINK_HERE" class="sticky-btn">⚡ Transform My Writing</a>
+/* HEADER */
+header {
+    background: linear-gradient(135deg,#4A90E2,#6C5CE7);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+header h1 { font-size:2.6em; }
+header p { font-size:1.2em; margin-bottom:20px; }
+.trust { margin-top:10px; font-size:0.9em; }
+
+/* HERO IMAGE */
+.hero-img {
+    width:100%;
+    max-width:780px;
+    margin:50px auto;
+    display:block;
+    border-radius:18px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    filter: brightness(1.02) contrast(1.05);
+    animation: fadeInUp 1s ease forwards;
+}
+.hero-img:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow:0 30px 70px rgba(0,0,0,0.3), 0 10px 25px rgba(0,0,0,0.15);
+    filter: brightness(1.05) contrast(1.08);
+}
+@keyframes fadeInUp {
+    from { opacity:0; transform:translateY(30px); }
+    to { opacity:1; transform:translateY(0); }
+}
+@media(max-width:768px){
+    .hero-img { max-width:95%; margin:30px auto; border-radius:14px; }
+    .hero-img:hover { transform:none; }
+}
+
+/* CTA */
+.cta {
+    background:#ff6a3d;
+    color:#fff;
+    padding:15px 35px;
+    font-size:1.2em;
+    border-radius:8px;
+    display:inline-block;
+    transition:0.3s;
+}
+.cta:hover { background:#e85b2f; }
+
+/* FEATURES */
+section { max-width:1100px; margin:60px auto; padding:0 20px; }
+.features { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; }
+.feature {
+    flex:1 1 280px;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    text-align:center;
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.6s;
+}
+.feature.show { opacity:1; transform:translateY(0); }
+
+/* TESTIMONIALS */
+.testimonial {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:14px;
+    margin-bottom:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+}
+
+/* EMAIL BOX */
+.email-box {
+    background: rgba(255,255,255,0.95);
+    padding:40px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.email-box input {
+    padding:15px;
+    width:250px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+.email-box button {
+    padding:15px 25px;
+    background:#4A90E2;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* STICKY CTA */
+.sticky-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#ff6a3d;
+    color:#fff;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    text-align:center;
+    padding:25px;
+    background:#222;
+    color:#fff;
+    font-size:0.9em;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Write Smarter & Faster with AI</h1>
+    <p>Improve your writing, paraphrase content, and enhance clarity in seconds.</p>
+
+    <!-- HERO IMAGE -->
+    <img src="https://images.unsplash.com/photo-1603570419888-4b0f0f6d7a0c?auto=format&fit=crop&w=1200&q=80" 
+         alt="AI writing assistant editing text on laptop" 
+         class="hero-img">
+
+    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta">Try It Now</a>
+
+    <div class="trust">✔ Trusted by millions of writers worldwide</div>
+</header>
+
+<section>
+    <div class="features">
+        <div class="feature">🔥 AI Paraphrasing Tool<br><br>Rewrite content safely while improving clarity.</div>
+        <div class="feature">⚡ Boost Productivity<br><br>Create essays, emails, and content faster.</div>
+        <div class="feature">✅ Grammar Checker<br><br>Correct mistakes and improve readability instantly.</div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center;">What Users Are Saying</h2>
+    <div class="testimonial">"This tool helps me write faster and more clearly." – Student</div>
+    <div class="testimonial">"Perfect for content rewriting and editing." – Freelancer</div>
+    <div class="testimonial">"My workflow improved significantly." – Blogger</div>
+</section>
+
+<section>
+    <div class="email-box">
+        <h2>Get FREE Writing Tips & Tools</h2>
+        <form action="YOUR_EMAIL_FORM_LINK" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Get Access</button>
+        </form>
+        <p>No spam. Unsubscribe anytime.</p>
+    </div>
+</section>
+
+<section style="text-align:center;">
+    <h2>Start Improving Your Writing Today</h2>
+    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta">Get Started Now</a>
+</section>
+
+<a href="YOUR_AFFILIATE_LINK_HERE" class="sticky-btn">🚀 Start Now</a>
+
+<footer>
+    <p>© 2026 Independent Affiliate Page</p>
+    <p>This page contains affiliate links. We may earn a commission at no extra cost to you.</p>
+    <p>This is not the official website. All product names, logos, and brands belong to their respective owners.</p>
+</footer>
+
+<script>
+// Scroll animation
+let features = document.querySelectorAll('.feature');
+window.addEventListener('scroll', () => {
+    features.forEach(f => {
+        let position = f.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100){
+            f.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
