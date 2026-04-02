@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finish Essays Faster</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.hero {
+  background: linear-gradient(to right, #eef5ff, #ffffff);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.btn {
+  background: #ffcc00;
+  color: #000;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 50px 20px;
+}
+
+.light { background: #f7f7f7; }
+.blue { background: #f0f6ff; }
+.dark { background: #0b3c5d; color: #fff; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sticky CTA */
+.sticky-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffcc00;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* Countdown */
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+/* Popup */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-box {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Finish Your Essays in Minutes — Not Hours</h1>
+    <p>Students are using AI to rewrite essays, fix grammar, and save hours daily.</p>
+    <a href="#" class="btn">?? Try It Free Now</a>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="section">
+  <div class="container">
+    <h2>Limited Time — Try It Free</h2>
+    <div id="timer">10:00</div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section light">
+  <div class="container">
+    <h2>Tired of Essay Stress?</h2>
+    <div class="grid">
+      <div class="card">? Takes too long</div>
+      <div class="card">?? Deadline pressure</div>
+      <div class="card">? Grammar issues</div>
+      <div class="card">?? Plagiarism worries</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section">
+  <div class="container">
+    <h2>Your Smart Writing Shortcut</h2>
+    <p style="text-align:center;">Rewrite, improve, and polish your essays instantly.</p>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section blue">
+  <div class="container">
+    <h2>What You Get</h2>
+    <div class="grid">
+      <div class="card">? Instant rewriting</div>
+      <div class="card">? Better grammar</div>
+      <div class="card">? Clear writing</div>
+      <div class="card">? Save hours</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section light">
+  <div class="container">
+    <h2>Students Love It</h2>
+    <div class="grid">
+      <div class="card">? “Saved my exams!”</div>
+      <div class="card">? “Game changer!”</div>
+      <div class="card">? “So easy to use!”</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section dark">
+  <div class="container">
+    <h2>Start Now — It’s Free</h2>
+    <a href="#" class="btn">?? Click Here to Try It</a>
+  </div>
+</section>
+
+<!-- POPUP -->
+<div id="popup">
+  <div id="popup-box">
+    <h2>Wait! Don’t Leave ??</h2>
+    <p>Try the AI tool students are using to finish essays fast.</p>
+    <a href="#" class="btn">?? Try It Free</a>
+  </div>
+</div>
+
+<!-- STICKY BUTTON -->
+<div class="sticky-btn">
+  ?? Try It Free Now
+</div>
+
+<script>
+// Countdown Timer
+let time = 600;
+let timer = setInterval(function() {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  document.getElementById("timer").innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+  time--;
+  if (time < 0) clearInterval(timer);
+}, 1000);
+
+// Exit Popup
+document.addEventListener("mouseleave", function() {
+  document.getElementById("popup").style.display = "flex";
+});
+</script>
+
+</body>
+</html>
